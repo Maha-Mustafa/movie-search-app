@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eedad1;
+  color: #383e56;
+}
+p {
+  font-size: 1.6rem;
+}
+small {
+  font-size: 1.2rem;
+}
+.navbar {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.navbar h1 {
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.main-nav {
+  list-style: none;
+}
+.nav-links {
+  text-decoration: none;
+  color: #383e56;
+}
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .main-nav li {
+    margin: 0;
+  }
+  .nav-links {
+    margin-left: 40px;
+    padding: 20px;
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+}
+.title {
+  font-size: 4.4rem;
+  text-align: center;
+}
+/* mobile first */
+.form {
+  display: grid;
+}
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+.button {
+  background-color: #383e56;
+  color: white;
+  padding: 1rem 2rem;
+  border: 1px solid #383e56;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 250ms;
+}
+.button:hover {
+  background-color: rgba(56, 62, 86, 0.9);
+}
+@media (min-width: 786px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  .input {
+    margin-bottom: 0;
+  }
+}
+.card-list {
+  margin-top: 4rem;
+}
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  background-color: #d4b5b0;
+}
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block;
+}
+.card--content {
+  background-color: #eedad1;
+  padding: 15px;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+.card--desc {
+  font-style: italic;
+}
